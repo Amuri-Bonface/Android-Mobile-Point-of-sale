@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    android:background="@drawable/layout_bg"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/listView"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Distributor Code"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btncheckpoints"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Points"
+        android:layout_alignTop="@+id/editTextPoints"
+        android:layout_alignParentEnd="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btncheckpoints">
+
+        <TextView
+            android:id="@+id/textPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btncheckpoints"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="22dp"
+            android:text="Distributor data"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+
+</RelativeLayout>
